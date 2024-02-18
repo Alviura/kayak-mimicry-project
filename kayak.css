@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-bar {
+    height: 75px;
+    border: 2px solid firebrick;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar .left-side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.15rem;
+    margin-left: 1.5rem;
+}
+.left-side .menu{
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+.left-side .menu:hover{
+    background-color: rgb(207, 204, 204);
+    border-radius: 0.1rem;
+}
+.left-side .kayak-logo{
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    padding: 0.3rem 0.3rem 0.3rem 0.1rem 
+}
+.kayak-logo:active{
+    border: 2px solid green;
+}
+.kayak-logo .logo{
+    background-color: rgb(255, 105, 15);
+    padding: 0.25rem 0.4rem;
+    margin-right: -0.15rem
+}
