@@ -4,9 +4,13 @@
     list-style: none;
 }
 
+body{
+    width: 100%;
+    height: 100%;
+}
 .nav-bar {
-    height: 75px;
-    border: 2px solid firebrick;
+    height: 80px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,11 +22,12 @@
     flex-direction: row;
     align-items: center;
     gap: 1.15rem;
-    margin-left: 1.5rem;
+    margin-left: 1.25rem;
 }
-.left-side .menu{
+.left-side .fa-bars{
     box-sizing: border-box;
-    padding: 0.5rem;
+    padding: 0.5em;
+    font-size: 1rem;
 }
 .left-side .menu:hover{
     background-color: rgb(207, 204, 204);
@@ -41,4 +46,32 @@
     background-color: rgb(255, 105, 15);
     padding: 0.25rem 0.4rem;
     margin-right: -0.15rem
+}
+
+.nav-bar .right-side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1.25rem;
+}
+.right-side .fa-heart{
+    font-size: 1.25rem;
+}
+.right-side .sign-in{
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    align-items: center;
+    padding: 1em 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+}
+.sign-in .fa-user-circle{
+    font-size: 1.25rem;
+
 }
