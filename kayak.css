@@ -87,6 +87,13 @@ body{
     border: 2px solid firebrick;
     height: 900px;
 }
+.side-menu p{
+    margin: 1rem 0 1rem 1.65rem;
+}
+.side-menu .fa{
+    font-size: 1.25rem;
+    margin-right: 1rem;
+}
 main{
     grid-column: 2 / 3;
     border: 2px solid green;
