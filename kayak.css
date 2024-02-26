@@ -11,7 +11,7 @@ body{
 }
 .grid-template{
     display: grid;
-    grid-template-columns: 245px 1fr;
+    grid-template-columns: 240px 1fr;
 }
 .nav-bar {
     grid-column-start: 1;
@@ -85,15 +85,32 @@ body{
 
 .side-menu{
     grid-column: 1 / 2;
-    border: 2px solid firebrick;
-    height: 900px;
+    /* border: 2px solid firebrick; */
+    height: auto;
 }
 .side-menu p{
-    margin: 1rem 0 1rem 1.65rem;
+    width: 180px;
+    margin: 0.25rem 0 0.25rem 0.5rem;
+    padding: 0.75rem 1.25rem 0.75rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.45rem;
+    font-size: 0.9rem;
+}
+.side-menu p:hover{
+    border-radius: 0.25rem;
+    background-color: rgb(238, 227, 227);
 }
 .side-menu .fa{
-    font-size: 1.25rem;
-    margin-right: 1rem;
+    font-size: 1rem;
+    color: grey;
+}
+.side-menu .name-cars{
+    padding-left: 0.1rem;    
+}
+.side-menu .name-stays{
+    margin-left: -0.2rem;
 }
 main{
     grid-column: 2 / 3;
