@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/8eddd3d0cd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href="kayak.css" rel="stylesheet">
     <title>Kayak.com</title>
 </head>
@@ -11,7 +14,7 @@
     <div class="grid-template">
         <header class="nav-bar">
             <div class="left-side">
-                <i class="fa fa-bars" aria-hidden="true"></i>
+                <box-icon name='menu' class="menu" ></box-icon>
                 <p class="kayak-logo">
                     <span class="logo">K</span>
                     <span class="logo">A</span>
@@ -21,33 +24,65 @@
                 </p>
             </div>
             <div class="right-side">
-                <i class="fa fa-heart" aria-hidden="true"></i>
+                <box-icon type='solid' name='heart'></box-icon>
                 <button class="sign-in">
-                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    <box-icon name='user-circle'></box-icon>
                     Sign in
                 </button>
             </div>
         </header>
         <hr>
         <aside class="side-menu">
-            <p><i class="fa fa-solid fa-circle-user"></i><span class="name">Sign In</span></p>
-            <hr>
-            <p><i class="fa fa-solid fa-plane"></i><span class="name">Flight</span></p>
-            <p><i class="fa fa-solid fa-bed"></i><span class="name-stays">Stays</span></p>
-            <p><i class="fa fa-car" aria-hidden="true"></i><span class="name-cars">Cars</span></p>
-            <p><i class="fa fa-umbrella" aria-hidden="true"></i><span class="name">Packages</span></p>
-            <hr>
-            <p><i class="fa fa-solid fa-globe"></i><span class="name">Explore</span></p>
-            <p><i class="fa fa-solid fa-sun"></i><span class="name">Flight Tracker</span></p>
-            <p><i class="fa fa-solid fa-calendar"></i><span class="name">Travel Tips</span></p>
-            <p><i class="fa fa-clock-o" aria-hidden="true"></i><span>Best Time to Travel</span></p>
-            <hr>
-            <p><i class="fa fa-regular fa-comment"></i><span>Feedback</span></p>
-            <hr>
-            <p><i class="fa fa-solid fa-heart"></i><span>Tips</span></p>
-            <hr>
-            <p><i class="fa fa-solid fa-briefcase"></i><span>KAYAK for Business</span></p>
-            <hr>
+            <ul>
+                <li>
+                    <a href="#"><box-icon name='user-circle' color="#A89D9D"></box-icon><span>Sign in</span></a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#"><box-icon name='plane-alt' type='solid' color="#A89D9D"></box-icon><span>Flights</span></a>
+                </li>
+                <li>
+                    <a href="#"><box-icon name='bed' color="#A89D9D"></box-icon><span>Stays</span></a>
+                </li>
+                <li>
+                    <a href="#"><box-icon type='solid' name='car' color="#A89D9D"></box-icon><span>Cars</span></a>
+                </li>
+                <li>
+                    <a href="#"><box-icon name='package' color="#A89D9D"></box-icon><span>Packages</span></a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#"><box-icon name='globe' color="#A89D9D"></box-icon><span>Explore</span></a>
+                </li>
+                <li>
+                    <a href="#"><box-icon name='radar' color="#A89D9D"></box-icon><span>Flight Tracker</span></a>
+                </li>
+                <li>
+                    <a href="#"><box-icon type='solid' name='calendar-event' color="#A89D9D"></box-icon><span>Travel tips</span></a>
+                </li>
+                <li>
+                    <a href="#"><box-icon type='solid' name='time-five' color="#A89D9D"></box-icon><span>Best time to travel</span></a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#"><box-icon type='solid' name='comment-edit' color="#A89D9D"></box-icon><span>Feedback</span></a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#"><box-icon type='solid' name='heart' color="#A89D9D"></box-icon><span>Tips</span></a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#"><box-icon type='solid' name='briefcase' color="#A89D9D"></box-icon><span> KAYAK for Business</span></a>
+                </li>
+                <hr>
+                <li>
+                    <a href="#"><span>English</span></a>
+                </li>
+                <li>
+                    <a href="#"><span>Kenyan shilling</span></a>
+                </li>
+            </ul>
         </aside>
         <main></main>
     </div>
