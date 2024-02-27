@@ -3,6 +3,7 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    font-family: "Open Sans", sans-serif;
 }
 
 body{
@@ -31,11 +32,6 @@ body{
     gap: 1.15rem;
     margin-left: 1.25rem;
 }
-.left-side .fa-bars{
-    box-sizing: border-box;
-    padding: 0.5em;
-    font-size: 1rem;
-}
 .left-side .menu:hover{
     background-color: rgb(207, 204, 204);
     border-radius: 0.1rem;
@@ -47,7 +43,7 @@ body{
     padding: 0.3rem 0.3rem 0.3rem 0.1rem 
 }
 .kayak-logo:active{
-    border: 2px solid green;
+    border: 2px solid rgb(131, 236, 131);
 }
 .kayak-logo .logo{
     background-color: rgb(255, 105, 15);
@@ -62,9 +58,6 @@ body{
     gap: 1rem;
     margin-right: 1.25rem;
 }
-.right-side .fa-heart{
-    font-size: 1.25rem;
-}
 .right-side .sign-in{
     font-size: 0.75rem;
     display: flex;
@@ -78,43 +71,38 @@ body{
     border: 1px solid black;
     border-radius: 0.2rem;
 }
-.sign-in .fa-user-circle{
-    font-size: 1.25rem;
-
-}
-
 .side-menu{
     grid-column: 1 / 2;
     /* border: 2px solid firebrick; */
     height: auto;
 }
-.side-menu p{
+.side-menu li{
     width: 180px;
-    margin: 0.25rem 0 0.25rem 0.5rem;
+    margin-left: 0.5rem;
     padding: 0.75rem 1.25rem 0.75rem 1.5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1.45rem;
-    font-size: 0.9rem;
+    
 }
-.side-menu p:hover{
+.side-menu li:hover{
     border-radius: 0.25rem;
     background-color: rgb(238, 227, 227);
 }
-.side-menu .fa{
-    font-size: 1rem;
-    color: grey;
+.side-menu li:active{
+    color: black;
+    font-weight: 500;
+    background-color: rgb(238, 227, 227);
 }
-.side-menu .name-cars{
-    padding-left: 0.1rem;    
+.side-menu a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.4rem;
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
 }
-.side-menu .name-stays{
-    margin-left: -0.2rem;
-}
+
 main{
     grid-column: 2 / 3;
-    border: 2px solid green;
-    height: 900px;
+    height: auto;
    
 }
