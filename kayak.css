@@ -76,6 +76,8 @@ body{
 }
 .side-menu{
     grid-column: 1 / 2;
+    grid-row-start: 2;
+    border-top: 1px solid grey;
     /* border: 2px solid firebrick; */
     height: auto;
 }
@@ -106,6 +108,28 @@ body{
 
 main{
     grid-column: 2 / 3;
+    grid-row-start: 2;
     height: auto;
-   
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+}
+main .container{
+    width: 80%;
+    margin: 2rem auto;
+
+}
+
+.container .drop-options{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: 1rem;
+    align-items: center;
+}
+.drop-options .drop-downs{
+    border: none;
+    padding: 0.25rem;
+    background-color: white;
+    width: 12vh
 }
