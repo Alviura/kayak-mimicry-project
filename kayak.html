@@ -31,7 +31,6 @@
                 </button>
             </div>
         </header>
-        <hr>
         <aside class="side-menu">
             <ul>
                 <li>
@@ -84,8 +83,41 @@
                 </li>
             </ul>
         </aside>
-        <hr class="hr">
-        <main></main>
+        <main>
+            <div class="container">
+                <h1 class="title">Compare flights from 100s of sites.</h1>
+                <div class="drop-options">
+                    <select class="drop-downs" name="trips">
+                        <option value="one-way">One-way</option>
+                        <option value="round-trip">Round-trip</option>
+                        <option value="multi-city">Multi-city</option>
+                    </select>
+                    <select class="drop-downs" name="age">
+                        <option value="adult">Adult<span class="age-gap">18-64</span></option>
+                        <option value="student">Student<span class="age-gap">over 18</span></option>
+                        <option value="senior">Seniors<span class="age-gap">over 65</span></option>
+                        <option value="youth">Youths<span class="age-gap">12-17</span></option>
+                        <option value="children">Children<span class="age-gap">2-11</span></option>
+                        <option value="toddlers">Toddlers in own seat<span class="age-gap">under 2</span></option>
+                        <option value="infants">Infants on lap<span class="age-gap">under 2</span></option>
+                    </select>
+                    <select class="drop-downs" name="category">
+                        <option value="economy">Economy</option>
+                        <option value="premium">Premium Economy</option>
+                        <option value="business">Business</option>
+                        <option value="first">First</option>
+                        <option value="multiple">Multiple</option>
+                    </select>
+                    <select class="drop-downs" name="state-of bags">
+                        <option value="" disabled selected>Bags</option>
+                        <option value="carry">Carry-on bag</option>
+                        <option value="checked">Checked bag</option>
+                    </select>
+                </div>
+                
+            </div>
+        </div>
+        </main>
     </div>
 </body>
 </html>
