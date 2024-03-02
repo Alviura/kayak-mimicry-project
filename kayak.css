@@ -133,3 +133,20 @@ main .container{
     background-color: white;
     width: 12vh
 }
+.container .navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+.navbar .bar{
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+}
