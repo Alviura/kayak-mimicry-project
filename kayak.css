@@ -139,6 +139,7 @@ main .container{
     align-items: center;
     gap: 1rem;
     max-width: 80vw;
+    padding: 0.5rem 1.5rem 0.5rem 0rem;;
     
 }
 .navbar .bar{
@@ -169,4 +170,7 @@ main .container{
 }
 .bar .plus{
     padding:0.25rem;
+}
+.navbar .search-button{
+    padding: 0.5rem;
 }
