@@ -172,5 +172,8 @@ main .container{
     padding:0.25rem;
 }
 .navbar .search-button{
-    padding: 0.5rem;
+    padding: 1rem;
+    border: 1px solid whitesmoke;
+    border-radius: 0.5rem;
+    background-color: rgb(255, 105, 15);
 }
