@@ -136,10 +136,11 @@ main .container{
 .container .navbar{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     max-width: 80vw;
-    padding: 0.5rem 1.5rem 0.5rem 0rem;;
+    padding: 0.5rem 1.5rem 0.5rem 0rem;
     
 }
 .navbar .bar{
@@ -152,28 +153,123 @@ main .container{
     border-radius: 0.5rem;
     padding: 0.75rem;
 }
+.navbar .first-tab{
+    display: flex;
+    gap: 0.25rem;
+    cursor: text;
+}
 .bar .nbo{
+    border: 1px solid whitesmoke;
+    background-color: white;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.bar .plus{
+    font-size: 1rem;
+    font-weight: 500;
+    width: 1.5rem;
+    text-align: center;
     border: 1px solid white;
     background-color: white;
-    padding: 0.1rem 0.5rem;
-    font-size: 0.85rem;
 }
-.navbar .schedule{
+.nbo:hover, .plus:hover{
+    border: 1px solid black;
+    cursor: default;
+}
+.navbar .arrows{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     background-color: whitesmoke;
     border: 1px solid whitesmoke;
     border-radius: 0.5rem;
     padding: 0.75rem;
+    position: relative;
+    width: 2.5rem;
+    height: 1.75rem;
+    cursor: pointer;
+    
+}
+.arrows .left-arrow{
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    
+}
+.arrows .right-arrow{
+    position: absolute;
+    top: 18px;
+    right: 13px;
+}
+.navbar .flight{
+    width: 10vh;
+    gap: 0.5rem;
+    cursor: text;
+}
+.navbar .first-calendar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 0.5rem;
+    cursor: pointer;
 
 }
-.bar .plus{
-    padding:0.25rem;
+.navbar .second-calendar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 0.5rem;
+    margin: -0.5rem;
+    cursor: pointer;
+
+}
+.first-calendar .first{
+    display: flex;
+    position: relative;
+    width: 2.5rem;
+    height: 1.75rem;
+    margin-left: auto;
+}
+.first .chev-left{
+    position: absolute;
+    left: 0px;
+}
+.first .chev-right{
+    position: absolute;
+    right: 0px;
+}
+.second-calendar .second{
+    display: flex;
+    position: relative;
+    width: 2.5rem;
+    height: 1.75rem;
+    margin-left: auto;
+    
+}
+.second .chev-left{
+    position: absolute;
+    left: 0px;
+}
+.second .chev-right{
+    position: absolute;
+    right: 0px;
 }
 .navbar .search-button{
-    padding: 1rem;
+    margin-left: 0.5rem;
+    padding: 0.75rem 1rem;
     border: 1px solid whitesmoke;
     border-radius: 0.5rem;
     background-color: rgb(255, 105, 15);
+    cursor: pointer;
+}
+.bar:hover, .arrows:hover {
+    background-color: rgb(229, 231, 231);
+}
+.search-button:hover{
+    background-color: rgb(226, 90, 5);
 }
